@@ -1,16 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './style.scss'
-// import Slides from '../Slide'
+import Slides from '../Slide'
 import i18n from '../../i18n'
-// import SwipeableViews from 'react-swipeable-views'
 
 function Content() {
   const { t } = i18n
-  const [index, setIndex] = useState(0)
-
-  const handleChangeIndex = newIndex => {
-    setIndex(newIndex)
-  }
   return (
     <>
       <div className="col-12 content-wrapper bg-white card shadow-sm border-0 p-4">
@@ -24,16 +18,7 @@ function Content() {
       <div className="container ">
         <div className="row">
           <div className="col-12 mt-2">
-            {/* <Slides /> */}
-            {/* <SwipeableViews
-              index={index}
-              onChangeIndex={handleChangeIndex}
-            >
-              <div>1</div>
-              <div>2</div>
-              <div>2</div>
-              <div>3</div>
-            </SwipeableViews> */}
+            <Slides />
           </div>
         </div>
       </div>

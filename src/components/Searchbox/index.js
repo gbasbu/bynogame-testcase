@@ -12,7 +12,7 @@ function Searchbox() {
 
   return (
     <>
-      <div className={`${isFocused ? 'searchbox-focused' : ''} searchbox-wrapper`}>
+      <div className={`${isFocused ? 'searchbox-focused' : ''} searchbox-wrapper mt-md-0`}>
         <div className="search-icon">
           <ImSearch size={20} />
         </div>

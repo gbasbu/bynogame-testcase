@@ -10,7 +10,7 @@ function Nav() {
   return (
     <div className="container navbar-wrapper mt-3">
       <div className="row">
-        <div className="d-flex align-items-center justify-content-start">
+        <div className="d-flex col-12 col-sm-6 align-items-center justify-content-start">
           <nav>
             <ol className="breadcrumb mb-0">
               <li className="breadcrumb-item">
@@ -28,7 +28,7 @@ function Nav() {
             </ol>
           </nav>
         </div>
-        <div className="d-flex align-items-center justify-content-end">
+        <div className="d-flex col-12 col-sm-6 align-items-start justify-content-end">
           {!isFavorite ? (
             <AiOutlineHeart
               className="heart-icon-empty"
