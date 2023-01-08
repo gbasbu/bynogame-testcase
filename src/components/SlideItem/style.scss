@@ -1,0 +1,37 @@
+.slide-item-wrapper {
+  .slide-item-info-wrapper {
+    .old-price,
+    .new-price {
+      text-align: right;
+    }
+    .slide-item-discount {
+      color: #3cb339;
+      font-weight: bold;
+      border: 1px solid #3cb339;
+      padding: 0.1875rem 0.375rem;
+      border-radius: 0.2rem;
+    }
+    .old-price {
+      color: #ed502f;
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-decoration-line: line-through;
+    }
+    .new-price {
+      color: #484848;
+      font-weight: 700;
+    }
+  }
+}
+
+.dark-mode {
+  .slide-item {
+    background-color: #282828 !important;
+    .slide-item-title {
+      color: #969696;
+    }
+    .new-price {
+      color: #969696;
+    }
+  }
+}

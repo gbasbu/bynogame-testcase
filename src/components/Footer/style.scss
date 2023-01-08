@@ -1,0 +1,39 @@
+.footer-top-wrapper {
+  background-color: #e4e4e4;
+  a {
+    color: #484848;
+  }
+}
+
+.footer-bot-wrapper {
+  background-color: #282828;
+  padding-block: 2em;
+  min-height: 5em;
+  margin-bottom: 3.75rem;
+  .contacts {
+    p {
+      color: #c9c9c9;
+      font-size: 0.875rem;
+    }
+  }
+  .agreements {
+    p {
+      color: #ffffff;
+      margin-right: 2em;
+      font-size: 0.7rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.dark-mode {
+  .footer-top-wrapper {
+    background-color: #282828;
+    a {
+      color: #969696;
+    }
+    p {
+      color: #484848;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.count-wrapper {
+  background-color: #bfbfbf;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  button {
+    background: transparent;
+    border: none;
+  }
+  .count {
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff;
+    margin-inline: 0.3rem;
+    padding-block: 0.3rem;
+    outline: none;
+    border: none;
+    font-weight: 600;
+  }
+}
+
+.dark-mode {
+  .count {
+    background-color: #282828;
+    color: #969696 !important;
+  }
+}

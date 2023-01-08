@@ -1,0 +1,25 @@
+.content-wrapper {
+  margin-top: -2rem;
+  .content-title {
+    color: red;
+    font-weight: 500;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  .content-info {
+    font-weight: 300;
+    color: red;
+    font-size: 0.9rem;
+  }
+  hr {
+    border-top: 0.0625rem solid gray;
+  }
+}
+
+.dark-mode {
+  .card {
+    background-color: #282828 !important;
+    color: #969696;
+  }
+}

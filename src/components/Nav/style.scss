@@ -1,0 +1,30 @@
+.navbar-wrapper {
+  nav {
+    padding: 0.75rem 7px;
+    .breadcrumb {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      .breadcrumb-item {
+        font-weight: 500;
+      }
+      .breadcrumb-item .active {
+        opacity: 0.4;
+      }
+    }
+  }
+  .heart-icon-selected {
+    color: #ed502f;
+  }
+}
+
+.dark-mode {
+  .navbar-wrapper {
+    .breadcrumb {
+      color: #969696;
+    }
+    svg {
+      color: #969696;
+    }
+  }
+}

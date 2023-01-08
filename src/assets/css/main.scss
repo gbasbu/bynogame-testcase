@@ -1,0 +1,22 @@
+body {
+  background-color: #f3f3f3;
+  .scroll-to-top {
+    border: 1px solid #ed502f;
+    color: #ed502f;
+    top: 40px;
+    right: 30px;
+  }
+}
+
+.dark-mode {
+  background-color: #000 !important;
+  .btn-outline-dark {
+    border-color: #343a40 !important;
+    color: #969696 !important;
+  }
+  .scroll-to-top {
+    border: 1px solid #ed502f;
+    color: #969696;
+    background-color: #282828;
+  }
+}

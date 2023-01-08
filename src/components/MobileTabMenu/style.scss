@@ -1,0 +1,24 @@
+.footer-mobile-menu {
+  .text {
+    margin-top: 0.25rem;
+    font-size: 0.625rem;
+    font-weight: 700;
+    letter-spacing: -0.24px;
+  }
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.dark-mode {
+  .footer-mobile-menu {
+    .bg-white {
+      background-color: #000 !important;
+      * {
+        color: #969696 !important;
+      }
+    }
+  }
+}

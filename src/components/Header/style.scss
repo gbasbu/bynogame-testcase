@@ -1,0 +1,88 @@
+.header-wrapper {
+  background-color: #ffffff;
+  .header-top {
+    display: flex;
+    border-bottom: 0.125rem solid #e4e4e4;
+    padding-inline: 0.875rem;
+    padding-bottom: 0.3rem;
+    .brand-icons {
+      color: #969696;
+      padding-right: 1rem;
+      font-weight: 600;
+      font-size: 1.3rem;
+    }
+  }
+  .header-center {
+    padding-inline: 0.875rem;
+    padding-block: 1rem;
+    .logo {
+      width: 10.75rem;
+      height: 3rem;
+    }
+    .menus {
+      button {
+        background-color: #ffffff;
+        outline: none;
+        border: none;
+        width: 36px;
+        height: 36px;
+        border: 1px solid #e4e4e4;
+        border-radius: 50%;
+        margin-left: 1rem;
+      }
+      .language-menu {
+        position: relative;
+        svg {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          opacity: 0.3;
+        }
+        .language-text {
+          font-weight: bold;
+        }
+      }
+      .user-menu {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        .user-icon-wrapper {
+          position: absolute;
+          width: 85%;
+          height: 85%;
+          border: 1px solid #e4e4e4;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          border-radius: 50%;
+          color: #969696;
+        }
+      }
+    }
+  }
+}
+
+.dark-mode {
+  .header-wrapper {
+    background-color: #282828 !important;
+    .header-top {
+      border-color: #000 !important;
+    }
+    .header-center {
+      .menus {
+        button {
+          background-color: transparent !important;
+          border-color: #000 !important;
+          * {
+            color: #969696 !important;
+          }
+          .user-icon-wrapper {
+            background-color: #000 !important;
+            border-color: #000 !important;
+          }
+        }
+      }
+    }
+  }
+}

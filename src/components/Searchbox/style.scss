@@ -1,0 +1,155 @@
+.searchbox-wrapper {
+  display: flex;
+  position: relative;
+  margin-top: 1rem;
+  input {
+    width: 100%;
+    height: calc(1.5em + 1rem + 2px);
+    border: 2px solid #e4e4e4;
+    border-radius: 0.2rem;
+    font-size: 1.1rem;
+    background-color: #ffffff;
+    padding-left: 3rem;
+    padding-right: 5.5asdasdrem;
+    padding-top: 0.3rem;
+    outline: none;
+  }
+  input::placeholder {
+    opacity: 0.5;
+  }
+  .search-icon,
+  .search-text,
+  .search-close {
+    position: absolute;
+  }
+  .search-text {
+    right: 0;
+    width: 65px;
+    height: 100%;
+    background-color: #e4e4e4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    border-top-right-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+  }
+  .search-icon {
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #e4e4e4;
+  }
+  .search-close {
+    right: 75px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    opacity: 0.3;
+  }
+}
+.popular-searches-wrapper {
+  border: 2px solid #ed502f;
+  border-top: none;
+  position: relative;
+  background-color: #ffffff;
+  z-index: 100;
+  margin-top: -3px;
+  .popular-searches-top {
+    padding: 1rem;
+    background-color: #f3f3f3;
+    .title {
+      font-weight: 700;
+    }
+    .title,
+    .search-item {
+      font-size: 0.8rem;
+    }
+  }
+  .popular-searches-center {
+    p {
+      font-size: 0.76563rem;
+    }
+  }
+}
+
+.dark-mode {
+  .searchbox-wrapper {
+    input {
+      background-color: #000;
+      border-color: #000;
+    }
+    .search-icon {
+      color: #282828;
+    }
+    .search-text {
+      background-color: #282828;
+      color: #000;
+      border: 2px solid #000;
+    }
+    .search-close {
+      background-color: transparent !important;
+      color: #969696 !important;
+    }
+  }
+
+  .popular-searches-wrapper {
+    .popular-searches-top {
+      background-color: #282828 !important;
+      .title {
+        color: #969696 !important;
+      }
+      .search-item {
+        background-color: #484848 !important;
+        color: #969696 !important;
+      }
+    }
+    .popular-searches-center {
+      background-color: #484848 !important;
+      .font-italic {
+        color: #969696 !important;
+      }
+      .popular-procut-item-wrapper {
+        color: #969696 !important;
+        button {
+          background-color: #ed502f !important;
+          color: #f9c7bd !important;
+        }
+      }
+    }
+  }
+  .searchbox-focused {
+    input {
+      border-color: #ed502f;
+    }
+    .search-text {
+      background-color: #ed502f;
+      color: #ffffff;
+    }
+    .search-icon {
+      color: #ed502f;
+    }
+    .search-text {
+      border: none !important;
+    }
+  }
+}
+
+.searchbox-focused {
+  input {
+    border-color: #ed502f;
+  }
+  .search-text {
+    background-color: #ed502f;
+    color: #ffffff;
+  }
+  .search-icon {
+    color: #ed502f;
+  }
+  .search-text {
+    border: none !important;
+  }
+}
