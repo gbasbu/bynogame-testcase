@@ -37,7 +37,7 @@
     "paragraph16": "Bellek (RAM) = 4 GB RAM.",
     "paragraph17": "Ekran Kartı = NVIDIA GeForce GTX 1050 Ti veya AMD Radeon R9 380.",
     "paragraph18": "Valorant'ta kaç karakter var?",
-    "paragraph19": "<strong>Valorant ajan sayısı yeni ajan</strong> Neon ile 18 oldu. En yeni <strong>Valorant karakterleri ve özellikleri</strong>&nbsp;listesini sizler için hazırladığımız <span style={{ textDecoration: 'underline', color: '#ff0000' }}> <span style={{ textDecoration: 'underline' }}><a href='https://www.bynogame.com/tr/haberler/valorant-ajanlarini-taniyalim'><span style={{ textDecoration: 'underline', color: '#ff0000' }}>içeriğimizi</span> </a></span></span>incelemeyi unutmayın.",
+    "paragraph19": "<strong>Valorant ajan sayısı yeni ajan</strong> Neon ile 18 oldu. En yeni <strong>Valorant karakterleri ve özellikleri</strong>&nbsp;listesini sizler için hazırladığımız <span style={{ textDecoration: 'underline', color: '#ff0000' }}> <span style={{ textDecoration: 'underline' }}><a href='https://www.bynogame.com/tr/haberler/valorant-ajanlarini-taniyalim'><span style={{ textDecoration: 'underline', color: '#ff0000' }}>içeriğimizi</span></a> </span></span>incelemeyi unutmayın.",
     "list2": "<li>Jett - Düellocu</li><li>Raze - Düellocu</li><li>Breach - Öncü</li><li>Omen - Kontrol Uzmanı</li><li>Brimstone - Kontrol Uzmanı</li><li>Phoenix - Düellocu</li><li>Sage - Gözcü</li><li>Sova - Öncü</li><li>Viper - Kontrol Uzmanı</li><li>Cypher - Gözcü</li><li>Reyna - Düellocu</li><li>Killjoy - Gözcü</li><li>Skye - Öncü</li><li>Yoru - Düellocu</li><li>Astra - Kontrol Uzmanı</li><li>Kay/o - Öncü</li><li>Chamber - Gözcü</li><li>Neon - Düellocu</li><li>Fade - Öncü</li><li>Harbor - Kontrol Uzmanı</li>",
     "paragraph20": "VALORANT.exe ve VALORANT-Win64-Shipping.exe'ye sağ tıklayıp Özellikleri seçin. Bir sonraki pencerede, Uyumluluk menüsüne gidin ve Tam ekran iyileştirmelerini devre dışı bırak kutusunu işaretleyin. Kutuyu işaret ettikten sonra, değişiklikleri kaydetmek için Uygula'yı seçin. Ek olarak:",
     "paragraph21": "Grafik kart sürücülerinizi güncelleyin.",
@@ -79,7 +79,8 @@
     "paragraph57": "Net bir geri dönüş süresi olmamakla birlikte en kısa sürede dönüş sağlanmaktadır.",
     "paragraph58": "Valorant Arayüzüm kayboldu nasıl geri getirebilirim?",
     "paragraph59": "Arayüzü açıp kapatabilmek için şu yolu izleyebilirsiniz:",
-    "paragraph60": "Ayarlar &gt; Genel&gt; Diğer&gt; Oyun İçinde Kullanıcı Arayüzünü Gizle"
+    "paragraph60": "Ayarlar &gt; Genel&gt; Diğer&gt; Oyun İçinde Kullanıcı Arayüzünü Gizle",
+    "carouselTitle": "Sizin için <strong>Seçtiklerimiz</strong>"
   },
   "mobileRightMenu": {
     "login": "Giriş Yap",
@@ -143,5 +144,28 @@
     "popularProducts": "Popüler Ürünler:",
     "addToCart": "Sepete Ekle",
     "takeALook": "Göz At"
+  },
+  "header": {
+    "stores": "MAĞAZALAR",
+    "param": "PARAM",
+    "promotions": "KAMPANYA",
+    "news": "HABERLER",
+    "corporate": "KURUMSAL",
+    "comments": "YORUMLAR",
+    "helpDest": "YARDIM MERKEZİ",
+    "listAnItem": "İlan Ekle, Satıcı ol"
+  },
+  "mobileUserDropdown": {
+    "login": "Giriş Yap",
+    "register": "Kayıt Ol",
+    "signInOrSignup": "veya Kayıt Ol",
+    "activation": "Aktivasyon",
+    "forgotPassword": "Şifremi Unuttum",
+    "account": "Hesabım",
+    "orders": "Siparişlerim",
+    "sales": "Satışlarım",
+    "pay": "Ödeme Yap",
+    "cupons": "Kuponlarım",
+    "tickets": "Destek Taleplerim"
   }
 }

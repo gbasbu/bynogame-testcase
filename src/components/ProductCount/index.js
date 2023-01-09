@@ -3,7 +3,7 @@ import './style.scss'
 
 function Count({ value, setValue }) {
   return (
-    <div className="count-wrapper col-6 d-flex align-items-center justify-content-between mt-2 mb-2">
+    <div className="count-wrapper d-flex align-items-center justify-content-between mt-2 mb-2">
       <button onClick={() => (value !== 1 ? setValue(prev => prev - 1) : null)}>-</button>
       <input
         className="count"

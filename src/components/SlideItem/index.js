@@ -3,7 +3,7 @@ import './style.scss'
 
 function SlideItem({ item }) {
   const getItemTitle = title => {
-    return title.length > 25 ? `${title.slice(0, 25)}...` : title
+    return title.length > 20 ? `${title.slice(0, 20)}...` : title
   }
 
   const getPrice = (price, discount) => {
@@ -12,7 +12,7 @@ function SlideItem({ item }) {
   }
 
   return (
-    <div className="slide-item-wrapper mt-2">
+    <div className="slide-item-wrapper mt-2 mx-4">
       {item.map((item, index) => (
         <div
           key={`${item.title}-${index}-${index + 1}`}

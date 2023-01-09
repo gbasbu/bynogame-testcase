@@ -10,10 +10,52 @@
       padding-right: 1rem;
       font-weight: 600;
       font-size: 1.3rem;
+      @media screen and (min-width: 585px) and (max-width: 1200px) {
+        padding-inline: 1rem !important;
+      }
+      @media screen and (min-width: 1440px) {
+        padding-inline: 1rem !important;
+      }
+      &:hover {
+        color: #282828;
+      }
+    }
+    .col-lg-10 {
+      padding: 0;
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        li {
+          color: #969696;
+          font-size: 0.9rem;
+          font-weight: 500;
+          padding-top: 7px;
+          cursor: pointer;
+          &:hover {
+            color: #282828;
+          }
+        }
+        .help {
+          color: #ed502f;
+        }
+        .seller {
+          color: #297927;
+        }
+      }
     }
   }
   .header-center {
     padding-block: 1rem;
+    .desktop-user-menu {
+      @media screen and (min-width: 1200px) {
+        padding-left: 2rem;
+      }
+    }
     .logo {
       width: 10.75rem;
       height: 3rem;
@@ -109,16 +151,53 @@
     .notifications,
     .favorites,
     .basket {
-      width: 50px;
-      height: 50px;
+      width: 3.125rem;
+      height: 3.125rem;
       border: 1px solid #e4e4e4;
       border-radius: 50%;
+      cursor: pointer;
     }
     .basket {
-      width: 100px;
+      width: 6.25rem;
       border-radius: 30em;
+      &:hover {
+        background-color: #e4e4e4;
+      }
       span {
-        margin-left: 10px;
+        margin-left: 0.625rem;
+      }
+    }
+    .notifications,
+    .favorites {
+      .dropdown {
+        width: 12.5rem;
+        padding: 0.625rem 0.9375rem;
+        border-radius: 0.3125rem;
+        bottom: -3.4375rem;
+      }
+    }
+    .favorites {
+      .dropdown {
+        width: 10rem;
+        text-align: center;
+      }
+    }
+  }
+  .header-center-lg-item {
+    border-top: 1px solid #e4e4e4;
+    .menu-navbar-ul {
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 0;
+      height: 100%;
+      cursor: pointer;
+      .menu-navbar-li {
+        &:hover {
+          color: #ed502f;
+          border-bottom: 2px solid #ed502f;
+        }
       }
     }
   }
@@ -144,6 +223,38 @@
           }
         }
       }
+    }
+    .desktop-user-menu {
+      .dropdown,
+      .notifications,
+      .favorites,
+      .basket {
+        color: #969696;
+        border-color: #000;
+        background-color: #282828;
+        &:hover {
+          background-color: #464646;
+        }
+        .avatar {
+          border-color: #000;
+        }
+        .menu {
+          background-color: #282828;
+          border-color: #000;
+          span {
+            color: #969696;
+          }
+        }
+        .dropdown {
+          color: #969696;
+          border-color: #000 !important;
+          background-color: #282828 !important;
+        }
+      }
+    }
+    .header-center-lg-item {
+      border-color: #000;
+      color: #969696;
     }
   }
 }

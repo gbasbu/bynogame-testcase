@@ -2,16 +2,20 @@
 import React from 'react'
 import './style.scss'
 import i18n from '../../i18n'
+import { FaTelegramPlane, FaFacebookF, FaTwitch, FaYoutube, FaTwitter, FaLinkedinIn, FaTiktok } from 'react-icons/fa'
+import { AiOutlineInstagram } from 'react-icons/ai'
+import { globals } from '../../constant/index'
+
 function Footer() {
   const { t } = i18n
   return (
     <>
       {i18n.language === 'tr' && (
-        <div className="footer-top-wrapper container mt-5">
-          <div className="row">
-            <div className="col-12 col-md-2">
-              <p class="h5 mb-2 text-bold text-uppercase">BYNOGAME </p>
-              <ul class="list-unstyled p-0 widget-list">
+        <div className="footer-top-wrapper mt-5">
+          <div className="row pt-3 m-0 d-md-flex text-md-center">
+            <div className="col-12 col-sm-6 col-md-3">
+              <p className="h5 mb-2 text-bold text-uppercase">BYNOGAME </p>
+              <ul className="list-unstyled p-0 widget-list">
                 <li>
                   <a
                     className="text-decoration-none"
@@ -54,10 +58,10 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-24">
-              <div class="d-block widget">
-                <p class="h5 mb-2 text-bold text-uppercase">{t('footer.shopping')} </p>
-                <ul class="list-unstyled p-0 widget-list">
+            <div className="col-12 col-sm-6 col-md-3">
+              <div className="d-block widget">
+                <p className="h5 mb-2 text-bold text-uppercase">{t('footer.shopping')} </p>
+                <ul className="list-unstyled p-0 widget-list">
                   <li>
                     <a
                       className="text-decoration-none"
@@ -85,10 +89,10 @@ function Footer() {
                 </ul>
               </div>{' '}
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-24">
-              <div class="d-block widget">
-                <p class="h5 mb-2 text-bold text-uppercase">{t('footer.membership')} </p>
-                <ul class="list-unstyled p-0 widget-list">
+            <div className="col-12 col-sm-6 col-md-3">
+              <div className="d-block widget">
+                <p className="h5 mb-2 text-bold text-uppercase">{t('footer.membership')} </p>
+                <ul className="list-unstyled p-0 widget-list">
                   <li>
                     <a
                       className="text-decoration-none"
@@ -131,36 +135,108 @@ function Footer() {
                   </li>
                 </ul>
               </div>
-              <div class="col-md-6 col-sm-12 col-xs-24">
-                <div class="d-block widget">
-                  <p class="h5 mb-2 text-bold text-uppercase">{t('footer.help')}</p>
-                  <ul class="list-unstyled p-0 widget-list">
-                    <li>
-                      <a
-                        className="text-decoration-none"
-                        href="#"
-                      >
-                        {t('footer.helpCenter')}
-                      </a>{' '}
-                    </li>
-                    <li>
-                      <a
-                        className="text-decoration-none"
-                        href="#"
-                      >
-                        {t('footer.contact')}
-                      </a>
-                    </li>
-                  </ul>
-                </div>{' '}
-              </div>
+            </div>
+            <div className="col-12 col-sm-6 col-md-3">
+              <div className="d-block widget">
+                <p className="h5 mb-2 text-bold text-uppercase">{t('footer.help')}</p>
+                <ul className="list-unstyled p-0 widget-list">
+                  <li>
+                    <a
+                      className="text-decoration-none"
+                      href="#"
+                    >
+                      {t('footer.helpCenter')}
+                    </a>{' '}
+                  </li>
+                  <li>
+                    <a
+                      className="text-decoration-none"
+                      href="#"
+                    >
+                      {t('footer.contact')}
+                    </a>
+                  </li>
+                </ul>
+              </div>{' '}
             </div>
           </div>
         </div>
       )}
-      <div className="footer-bot-wrapper container">
-        <div className="row">
-          <div className="col-12 col-md-3 col-lg-3">
+      <div className="row m-0 d-none d-md-flex justify-content-center footer-center">
+        <div className="col-md-8 col-xl-6 d-flex justify-content-around">
+          <a
+            target="_blank"
+            href={globals.telegram}
+            className="footer-icons"
+            rel="noreferrer"
+          >
+            <FaTelegramPlane />
+          </a>
+          <a
+            target="_blank"
+            href={globals.instagram}
+            className="footer-icons"
+            rel="noreferrer"
+          >
+            <AiOutlineInstagram />
+          </a>
+          <a
+            target="_blank"
+            href={globals.facebook}
+            className="footer-icons"
+            rel="noreferrer"
+          >
+            <FaFacebookF />
+          </a>
+          <a
+            target="_blank"
+            href={globals.twitch}
+            className="footer-icons"
+            rel="noreferrer"
+          >
+            <FaTwitch />
+          </a>
+          <a
+            target="_blank"
+            href={globals.youtube}
+            className="footer-icons"
+            rel="noreferrer"
+          >
+            <FaYoutube />
+          </a>
+          <a
+            target="_blank"
+            href={globals.twitter}
+            className="footer-icons"
+            rel="noreferrer"
+          >
+            <FaTwitter />
+          </a>
+          <a
+            target="_blank"
+            href={globals.linkedin}
+            className="footer-icons"
+            rel="noreferrer"
+          >
+            <FaLinkedinIn />
+          </a>
+          <a
+            target="_blank"
+            href={globals.tiktok}
+            className="footer-icons"
+            rel="noreferrer"
+          >
+            <FaTiktok />
+          </a>
+          <img
+            src="https://cdn.bynogame.com/images/1641890814297.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div className="footer-bot-wrapper mb-md-0">
+        <div className="row m-0 d-lg-flex">
+          <div className="col-12 col-lg-2">
             <div className="d-flex justify-content-center mb-3">
               <img
                 alt="ByNoGame"
@@ -168,7 +244,7 @@ function Footer() {
               />
             </div>
           </div>
-          <div className="col-12 col-md-3 col-lg-3">
+          <div className="col-12 col-lg-10 d-lg-flex justify-content-between">
             <div className="contacts mb-2 text-center">
               <p className="mb-0">ByNoGame Bilişim LTD.</p>
               <p className="mb-0">{t('footer.info')} info@bynogame.com</p>

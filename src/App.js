@@ -56,23 +56,61 @@ function App() {
         setSkin={setSkin}
       />
       <Nav />
-      {products.map((item, index) => {
-        return (
-          <div key={index}>
-            <Card
-              title={item.title}
-              description={t(`main.${item.description}`)}
-              price={item.price}
-              discount={item.discount}
-              image={item.image}
+      <div className="container">
+        <div className="row m-0">
+          <div className="col-xl-4 d-none d-xl-flex flex-column pt-4 card content-wrapper pb-3">
+            <h1
+              className="font-weight-bolder mb-3"
+              style={{ fontSize: '1.5rem' }}
+            >
+              Valorant Points
+            </h1>
+            <img
+              alt=""
+              src="https://cdn.bynogame.com/images/1640289080958.jpeg"
+              className="mb-3"
             />
+            {questions.map((item, index) => {
+              return (
+                <a
+                  key={index}
+                  href={item.href}
+                  className="btn btn-block btn-outline-dark btn-sm font-weight-bold mb-2 mx-3"
+                >
+                  {index !== 5 ? t(`main.${item.title}`) : item.title}
+                </a>
+              )
+            })}
+            <div className="px-3 mt-2">
+              <span className="content-title">{t('main.contentInfo1')}</span>
+              <div
+                className="mt-3"
+                dangerouslySetInnerHTML={{ __html: t('main.paragraph1') }}
+              ></div>
+              <span className="content-info">{t('main.contentInfo2')}</span>
+            </div>
           </div>
-        )
-      })}
+          <div className="col-12 col-xl-8">
+            {products.map((item, index) => {
+              return (
+                <div key={index}>
+                  <Card
+                    title={item.title}
+                    description={t(`main.${item.description}`)}
+                    price={item.price}
+                    discount={item.discount}
+                    image={item.image}
+                  />
+                </div>
+              )
+            })}
+          </div>
+        </div>
+      </div>
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div className="col-12 card shadow-sm border-0 p-4">
+            <div className="col-12 card shadow-sm border-0 p-4 d-xl-none">
               <div className="col-12 d-flex flex-column">
                 <h1
                   className="font-weight-bolder mb-3"

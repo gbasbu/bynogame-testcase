@@ -79,7 +79,8 @@
     "paragraph57": "Allthough there is no clear tournaround time, return as soon as possible.",
     "paragraph58": "My Valorant UI is lost, how can I get it back?",
     "paragraph59": "To turn the interface on and off, you can follow this path:",
-    "paragraph60": "Settings &gt; General &gt; Other &gt; Hide In-Game UI"
+    "paragraph60": "Settings &gt; General &gt; Other &gt; Hide In-Game UI",
+    "carouselTitle": "For You <strong>Selected</strong>"
   },
   "mobileRightMenu": {
     "login": "Sign In",
@@ -143,5 +144,28 @@
     "popularProducts": "Popular Products :",
     "addToCart": "Add To Cart",
     "takeALook": "Take a Look"
+  },
+  "header": {
+    "stores": "STORES",
+    "param": "PARAM",
+    "promotions": "PROMOTIONS",
+    "news": "NEWS",
+    "corporate": "CORPORATE",
+    "comments": "COMMENTS",
+    "helpDest": "HELP DESK",
+    "listAnItem": "List an item, become a Seller"
+  },
+  "mobileUserDropdown": {
+    "login": "Sign In",
+    "register": "Sign Up",
+    "signInOrSignup": "or Sign Up",
+    "activation": "Activation",
+    "forgotPassword": "Forgot Password",
+    "account": "Account",
+    "orders": "Orders",
+    "sales": "Selling",
+    "pay": "PAYMENT",
+    "cupons": "Coupons",
+    "tickets": "Tickets"
   }
 }

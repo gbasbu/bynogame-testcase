@@ -7,7 +7,7 @@ function Content() {
   const { t } = i18n
   return (
     <>
-      <div className="col-12 content-wrapper bg-white card shadow-sm border-0 p-4">
+      <div className="col-12 content-wrapper bg-white card shadow-sm border-0 p-4 d-xl-none">
         <span className="content-title">{t('main.contentInfo1')}</span>
         <div
           className="mt-3"

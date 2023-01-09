@@ -8,7 +8,7 @@ import i18n from '../../i18n'
 function MobileMenu({ setIsLeftMobileMenuOpen }) {
   const { t } = i18n
   return (
-    <div className="d-lg-none footer-mobile-menu position-fixed bottom-0 w-100">
+    <div className="d-md-none footer-mobile-menu position-fixed bottom-0 w-100">
       <div className="bg-white d-flex justify-content-around px-3 py-2">
         <div className="menu-item">
           <div className="icon">

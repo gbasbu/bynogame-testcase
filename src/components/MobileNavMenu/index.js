@@ -21,7 +21,7 @@ function MobileNavMenu({ isMobileNavOpen, setIsMobileNavOpen, skin }) {
       <div className="col-12 mt-3 mb-5 d-flex justify-content-center">
         <img
           alt=""
-          class="img-fluid mt-3 w-25"
+          className="img-fluid mt-3 w-25"
           src={
             skin === 'dark'
               ? 'https://cdn.bynogame.com/UX-new/logo-02.svg'

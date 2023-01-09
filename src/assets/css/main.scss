@@ -1,10 +1,20 @@
 body {
   background-color: #f3f3f3;
+  font-family: open sans, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
   .scroll-to-top {
     border: 1px solid #ed502f;
     color: #ed502f;
     top: 40px;
     right: 30px;
+  }
+  .container {
+    @media screen and(min-width: 1200px) and (max-width: 1440px) {
+      max-width: 100%;
+    }
   }
 }
 

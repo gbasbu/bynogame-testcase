@@ -5,14 +5,17 @@ import { AiOutlineInbox } from 'react-icons/ai'
 import { GiBroadsword } from 'react-icons/gi'
 import { BiWallet, BiMessage } from 'react-icons/bi'
 import { GoGift } from 'react-icons/go'
-import i18n from 'i18next'
-const { t } = i18n
 
 const globals = {
   home: 'https://www.bynogame.com/',
   instagram: 'https://www.instagram.com/bynogamecom/',
   tiktok: 'https://www.tiktok.com/@bynogame?lang=tr-TR',
-  telegram: 'https://t.me/ByNoGame'
+  telegram: 'https://t.me/ByNoGame',
+  facebook: 'https://www.facebook.com/bynogame',
+  twitch: 'https://www.twitch.tv/bynogame',
+  youtube: 'https://www.youtube.com/channel/UC20PbR2DEWN0HudQ6uPNjMg',
+  twitter: 'https://twitter.com/bynogame',
+  linkedin: 'https://tr.linkedin.com/company/bynogame'
 }
 
 const products = [
@@ -122,20 +125,6 @@ const slides = [
       price: 700,
       discount: 19,
       image: 'https://cdn.bynogame.com/avatar/1644768749732.webp'
-    }
-  ],
-  [
-    {
-      title: 'Google play 100 TL League of Legends: Wild Rift',
-      price: 100,
-      discount: 1,
-      image: 'https://cdn.bynogame.com/site-images/banner_cem/GOOGLE100TL.jpg'
-    },
-    {
-      title: 'Google play 50 TL League of Legends: Wild Rift',
-      price: 50,
-      discount: 2,
-      image: 'https://cdn.bynogame.com/images/1640288903407.jpeg'
     }
   ],
   [

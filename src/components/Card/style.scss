@@ -1,3 +1,9 @@
+.card-container {
+  padding: 0 !important;
+  @media screen and (min-width: 1200px) {
+    padding-left: 1rem !important;
+  }
+}
 .card-wrapper {
   background-color: #ffffff;
   padding: 0.5rem;
@@ -38,6 +44,10 @@
   .price {
     font-size: 1.4rem;
     font-weight: 600;
+    @media screen and (min-width: 1200px) {
+      margin-top: 4px;
+      margin-left: 6px;
+    }
     span {
       font-weight: normal;
       font-size: 1.2rem;
@@ -55,8 +65,16 @@
   }
 }
 
+.card-wrapper-md {
+  max-height: 123px;
+  img {
+    max-width: 107px;
+  }
+}
+
 .dark-mode {
-  .card-wrapper {
+  .card-wrapper,
+  .card-wrapper-md {
     background-color: #282828;
     border-color: #484848;
     color: #f3f3f3;
