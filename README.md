@@ -1,6 +1,6 @@
 # Live Link
 
-[Live Demo](bynogame-testcase.vercel.app)
+[Live Demo](https://bynogame-testcase.vercel.app/)
 
 # Getting Started with Create React App
 
