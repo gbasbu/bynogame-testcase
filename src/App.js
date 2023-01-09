@@ -19,8 +19,8 @@ function App() {
   const [showMobileMenu, setShowMobileMenu] = useState(false)
   const [isLeftMobileMenuOpen, setIsLeftMobileMenuOpen] = useState(false)
   const [showLeftMobileMenu, setShowLeftMobileMenu] = useState(false)
-  const [skin, setSkin] = useState('light')
-  const [, setLang] = useState('')
+  const [skin, setSkin] = useState(localStorage.getItem('skin') ? localStorage.getItem('skin') : 'light')
+  const [lang, setLang] = useState('')
 
   useEffect(() => {
     if (isMobileNavOpen) setShowMobileMenu(true)
@@ -33,6 +33,16 @@ function App() {
   }, [isLeftMobileMenuOpen])
 
   if (!localStorage.getItem('language')) localStorage.setItem('language', 'tr')
+
+  useEffect(() => {
+    if (lang === 'tr') return (window.document.title = 'Valorant VP Satın Al')
+    window.document.title = 'Buy Valorant VP'
+  }, [lang])
+
+  useEffect(() => {
+    localStorage.setItem('skin', skin)
+    if (skin === 'dark') document.body.classList.add('dark-mode')
+  }, [skin])
 
   return (
     <div className="App">
